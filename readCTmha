@@ -1,0 +1,5 @@
+import numpy as np
+import SimpleITK as sitk
+path='F:\ct\CT(1).mha'
+image = sitk.ReadImage(path)
+xslice_np100=sitk.GetArrayFromImage(image[:,:,100])
